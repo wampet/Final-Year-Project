@@ -1,0 +1,29 @@
+{
+  "devFiles": [
+    "static/development/dll/dll_b51ca49538b4e0dda20a.js"
+  ],
+  "pages": {
+    "/_app": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/company_login": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/election/candidate_list": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/homepage": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
+    ]
+  }
+}
