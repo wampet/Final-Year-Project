@@ -22,7 +22,7 @@ const HomepageHeading = ({ mobile }) => (
 	<Container text className="cont">
 		<Header
 			as="h1"
-			content="A blockchain-based E-voting system, built with love."
+			content="A blockchain Based Voting System For Makerere University"
 			inverted
 			style={{
 				fontSize: mobile ? '2em' : '3em',
@@ -34,7 +34,7 @@ const HomepageHeading = ({ mobile }) => (
 		/>
 		<Header
 			as="h4"
-			content="Make your vote count!"
+			content="We build for the future"
 			inverted
 			style={{
 				fontSize: mobile ? '1.5em' : '1.7em',
@@ -45,12 +45,12 @@ const HomepageHeading = ({ mobile }) => (
 		/>
 		<div style={{ float: 'left', marginTop: '10%' }}>
 			<Header as="h4" style={{ color: 'grey' }}>
-				Register/ Sign in for the company
+				Sign in as Admin
 			</Header>
 			<Link route="./company_login">
-				<Button primary size="huge" style={{ color: 'white', backgroundColor: '#627eea' }}>
+				<Button primary size="huge" style={{ color: 'white', backgroundColor: '#23A74C' }}>
 					<Icon name="left arrow" />
-					Company
+					Admin
 				</Button>
 			</Link>
 		</div>
@@ -58,10 +58,10 @@ const HomepageHeading = ({ mobile }) => (
 		<div style={{ float: 'right', marginTop: '10%' }}>
 			<Header as="h4" style={{ color: 'grey' }}>
 				{' '}
-				Sign in for Voters!
+				Sign in to vote
 			</Header>
 			<Link route="/voter_login">
-				<Button primary size="huge" style={{ color: 'white', backgroundColor: '#627eea' }}>
+				<Button primary size="huge" style={{ color: 'white', backgroundColor: '#23A74C' }}>
 					Voters
 					<Icon name="right arrow" />
 				</Button>
@@ -89,7 +89,7 @@ class DesktopContainer extends Component {
 				<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
 				<Helmet>
 					<title>HomePage</title>
-					<link rel="shortcut icon" type="image/x-icon" href="../../static/logo3.png" />
+					<link rel="shortcut icon" type="image/x-icon" href="../../static/mak100.png" />
 				</Helmet>
 				<Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
 					<Segment inverted textAlign="center" style={{ minHeight: 700, padding: '1em 0em' }} vertical>
@@ -104,14 +104,14 @@ class DesktopContainer extends Component {
 							<Container>
 								<h1
 									style={{
-										color: '#627eea',
+										color: '#23A74C',
 										verticalAlign: 'middle',
 										fontFamily: 'Freestyle Script',
 										fontSize: '400%',
 										paddingLeft: '42%',
 									}}
 								>
-									BlockVotes
+									MakVotes
 								</h1>
 							</Container>
 						</Menu>
@@ -146,17 +146,17 @@ const HomepageLayout = () => (
 				<Grid.Row textAlign="center">
 					<Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
 						<Header as="h3" style={{ fontSize: '2em' }}>
-							Private
-						</Header>
-						<p style={{ fontSize: '1.33em' }}>
-							Doesn't give any information <br />
-							regarding personal data.
-						</p>
-						<Header as="h3" style={{ fontSize: '2em' }}>
 							Secure
 						</Header>
 						<p style={{ fontSize: '1.33em' }}>
-							Not even a single chance of shutting <br /> down of the system.
+							The most secure way to<br />
+							cast your vote with maximum anonymity.
+						</p>
+						<Header as="h3" style={{ fontSize: '2em' }}>
+							Transparency
+						</Header>
+						<p style={{ fontSize: '1.33em' }}>
+						 Trust in an election begins and ends<br /> with transparency. 
 						</p>
 					</Grid.Column>
 					<Image src="../static/ether2.png" width="216" height="256" style={{ paddingTop: '50px' }} />
@@ -179,18 +179,16 @@ const HomepageLayout = () => (
 			</Grid>
 		</Segment>
 
-		<Segment inverted vertical style={{ padding: '5em 0em', backgroundColor: '#627eea' }}>
+		<Segment inverted vertical style={{ padding: '5em 0em', backgroundColor: '#23A74C' }}>
 			<Container>
 				<Header as="h3" style={{ fontSize: '2em', color: 'white', textAlign: 'center' }}>
-					A fascinating quote
+					Makerere Ethereum blockchain Voting system
 				</Header>
 				<p style={{ fontSize: '1.33em', textAlign: 'center', fontStyle: 'Italic' }}>
-					"We have elected to put our money and faith in a mathematical framework that is free of politics and
-					human error."
+					"A final year Decentralized blockchain voting system by Ssempangi Andrew and Wamanga Peter for Makerere University "
 				</p>
 				<Header as="h2" style={{ fontSize: '1.33em', color: 'white', textAlign: 'center' }}>
-					Tyler Winklevoss
-				</Header>
+					Ssempangi Andrew and Wamanga Peter				</Header>
 			</Container>
 		</Segment>
 	</ResponsiveContainer>

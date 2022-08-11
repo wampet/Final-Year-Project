@@ -45,7 +45,7 @@ class LoginForm extends Component {
 								type="password"
 							/>
 
-							<Button color="blue" fluid size="large" style={{ marginBottom: 15 }} onClick={this.signin}>
+							<Button color="green" fluid size="large" style={{ marginBottom: 15 }} onClick={this.signin}>
 								Submit
 							</Button>
 						</Segment>

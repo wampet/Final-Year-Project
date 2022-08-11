@@ -14,14 +14,14 @@ module.exports = {
 			from: process.env.EMAIL,
 			to: req.body.email,
 			subject: req.body.election_name + 'Registration',
-			html: 'Congrats you have been registered for  ' + req.body.election_name + ' election.',
+			html: 'Congratulations you have been registered for  ' + req.body.election_name + ' election.',
 		};
 		transporter.sendMail(mailOptions, function (err, info) {
 			if (err) {
 				res.json({ status: 'error', message: 'mail error', data: null });
 				console.log(err);
 			} else console.log(info);
-			res.json({ status: 'success', message: 'mail sent successfully!!!', data: null });
+			res.json({ status: 'success', message: 'Email sent successfully!!!', data: null });
 		});
 	},
 };

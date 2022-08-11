@@ -2,22 +2,17 @@
 ---
 authors: 
   -
-    family-names: Mehta
-    given-names: Ansh
+    family-names: Wamanga 
+    given-names: Peter
   -
-    family-names: Mehta
-    given-names: Charmee
+    family-names: Ssempangi
+    given-names: Andrew
   -
-    family-names: Gada
-    given-names: Sayyam
-  -
-    affiliation: "Prof."
-    family-names: Kadukar
-    given-names: Neeta
+
 cff-version: "1.1.0"
-date-released: 2019-06-01
+date-released: 2022-08-01
 message: "If you use this software, please cite it using these metadata."
-repository-code: "https://github.com/mehtaAnsh/BlockChainVoting"
-title: BlockChainVoting
+repository-code: "https://github.com/wampet/Final-Year-Project"
+title: Makerere Blockchain voting
 version: "v1.0"
 ...
