@@ -77,7 +77,7 @@ class LoginForm extends Component {
 							/>
 
 							<Button
-								color="blue"
+								color="green"
 								fluid
 								size="large"
 								style={{ marginBottom: 15 }}

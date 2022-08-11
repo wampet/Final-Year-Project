@@ -260,7 +260,7 @@ class VotingList extends Component {
                             onChange={this.captureFile}
                             style={{ maxWidth: '0.1px', maxHeight: '0.1px', zIndex: '-1', overflow: 'hidden', position: 'absolute' }} 
                           />
-                          <label for="embedpollfileinput" class="ui huge blue right floated button" style={{ fontSize: '15px', marginRight: '30%' }}>
+                          <label for="embedpollfileinput" class="ui huge green right floated button" style={{ fontSize: '15px', marginRight: '30%' }}>
                             <i class="ui upload icon"></i>
                             Upload image
                           </label>

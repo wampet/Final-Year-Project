@@ -58,7 +58,7 @@ module.exports = {
 											'<br>' +
 											'Your password is:' +
 											voter.password +
-											'<br><a href="http://localhost:3000/homepage">Click here to visit the website</a>', // plain text body
+											'<br><a href="https://https://makerere-blockchain-voting.herokuapp.com/voter_login">Please follow this link to vote</a>', // plain text body
 									};
 
 									transporter.sendMail(mailOptions, function (err, info) {
@@ -188,7 +188,7 @@ module.exports = {
 						}
 					});
 				} else {
-					res.json({ status: 'error', message: 'Voter already exists ', data: null });
+					res.json({ status: 'Error', message: 'Voter already exists ', data: null });
 				}
 			}
 		});
@@ -198,7 +198,7 @@ module.exports = {
 		VoterModel.findByIdAndRemove(req.params.voterId, function (err, voterInfo) {
 			if (err) cb(err);
 			else {
-				res.json({ status: 'success', message: 'voter deleted successfully!!!', data: null });
+				res.json({ status: 'Success', message: 'Voter deleted successfully!!!', data: null });
 			}
 		});
 	},
@@ -230,21 +230,22 @@ module.exports = {
 						subject: election_name + ' results', // Subject line
 
 						html:
-							'The results of ' +
+							'Hello, Thanks for voting ' +
+							'<b>The results of</b> ' +
 							election_name +
-							' are out.<br>The winner candidate is: <b>' +
+							' are out.<br> The winner of the election is: <b>' +
 							winner_candidate +
 							'</b>.',
 					};
 
 					transporter.sendMail(mailOptions, function (err, info) {
 						if (err) {
-							res.json({ status: 'error', message: 'mail error', data: null });
+							res.json({ status: 'Error', message: 'Email error', data: null });
 
 							console.log(err);
 						} else console.log(info);
 
-						res.json({ status: 'success', message: 'mails sent successfully!!!', data: null });
+						res.json({ status: 'Success', message: 'Emails sent successfully!!!', data: null });
 					});
 				}
 
@@ -263,19 +264,19 @@ module.exports = {
 
 					to: req.body.candidate_email, // list of receivers
 
-					subject: req.body.election_name + ' results !!!', // Subject line
+					subject: req.body.election_name + 'Final Results !!!', // Subject line
 
-					html: 'Congratulations you won ' + req.body.election_name + ' election.', // plain text body
+					html: 'Hello, Congratulations you won ' + req.body.election_name + ' election.', // plain text body
 				};
 
 				transporter.sendMail(mailOptions, function (err, info) {
 					if (err) {
-						res.json({ status: 'error', message: 'mail error', data: null });
+						res.json({ status: 'Error', message: 'Email error', data: null });
 
 						console.log(err);
 					} else console.log(info);
 
-					res.json({ status: 'success', message: 'mail sent successfully!!!', data: null });
+					res.json({ status: 'Success', message: 'Email sent successfully!!!', data: null });
 				});
 			}
 		});

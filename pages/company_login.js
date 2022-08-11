@@ -124,6 +124,7 @@ class DividerExampleVerticalForm extends Component {
 
           <Button.Group style={{ marginLeft: "43%" }}>
             <Button
+             color="green"
               primary
               content={visible ? "Sign in" : "Sign Up"}
               onClick={this.toggleVisibility}
@@ -165,7 +166,7 @@ class DividerExampleVerticalForm extends Component {
 
                       <Button
                         onClick={this.signin}
-                        color="blue"
+                        color="green"
                         fluid
                         size="large"
                         style={{ marginBottom: 15 }}
@@ -210,7 +211,7 @@ class DividerExampleVerticalForm extends Component {
                       />
                       <Button
                         onClick={this.signup}
-                        color="blue"
+                        color="green"
                         fluid
                         size="large"
                         style={{ marginBottom: 15 }}
