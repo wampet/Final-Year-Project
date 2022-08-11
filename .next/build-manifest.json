@@ -11,7 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/company_login": [
+    "/election/company_dashboard": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
