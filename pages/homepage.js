@@ -89,10 +89,10 @@ class DesktopContainer extends Component {
 				<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
 				<Helmet>
 					<title>HomePage</title>
-					<link rel="shortcut icon" type="image/x-icon" href="../../static/mak100.png" />
+					<link rel="shortcut icon" type="image/x-icon" href="../../static/logo3.png" />
 				</Helmet>
 				<Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
-					<Segment inverted textAlign="center" style={{ minHeight: 700, padding: '1em 0em' }} vertical>
+					<Segment inverted textAlign="center" style={{ minHeight: 700, padding: '1em 0em',  }} vertical>
 						<Menu
 							fixed={fixed ? 'top' : null}
 							inverted={!fixed}

@@ -2,15 +2,18 @@
 {
 
  background-color: #0688ba;
-  background: url('/static/mak4.jpg') no-repeat;
+background: url('/static/mak4.jpg');
  background-size:cover;
  background-position: center;
- background-repeat: no-repeat;
+margin: 0 auto;
  background-origin: inherit;
  position: relative;
+ height: auto;
+
 
 }
 #__next > div > div > div:nth-child(2) > div > div.ui.large.inverted.pointing.secondary.menu
 {
+    box-sizing: border-box;
     border-width: 0mm;
 }
