@@ -6775,7 +6775,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "C:\\Users\\WAMANGA\\Desktop\\wampet\\.next");
+      source_map_support_1.rewriteStacktrace(error, "X:\\CODE\\CODE FOLDERS\\wampet\\.next");
       return error;
     }
   };
