@@ -11,21 +11,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/company_login": [
+    "/election/candidate_list": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/election/create_election": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/homepage": [
-      "static/runtime/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/next/dist/pages/_error": [
+    "/election/voting_list": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
